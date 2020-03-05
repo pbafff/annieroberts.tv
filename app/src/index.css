@@ -1,0 +1,227 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1rem;
+  font-weight: 400;
+  background-color: black;
+  color: white;
+}
+
+nav {
+  top: 0;
+  width: 100%;
+  border-top: 0 solid;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: center;
+  text-transform: uppercase;
+  position: sticky;
+  z-index: 100;
+}
+
+nav > ul {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  max-width: none;
+  padding: 16px 16px 16px 0;
+  position: relative;
+}
+
+nav ul li a:hover {
+  color: #009fff;
+}
+
+nav a {
+  padding: 16px 16px 16px 0;
+  font-size: 0.83333rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  text-align: center;
+  height: 650px;
+}
+
+#banner {
+  background-size: cover;
+  background-position: center center;
+  transform: translateZ(-1px) scale(1.1);
+}
+
+@keyframes fadeout {
+  from {opacity: 1}
+  to {opacity: 0}
+}
+
+#eye-in-dark {
+  height: 650px;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+}
+
+#eye-in-dark.fadeout {
+  animation-name: fadeout;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in;
+  opacity: 0;
+}
+
+@keyframes fadein {
+  0%   { opacity: 0; padding-top: 40px; }
+  25%  { opacity: 0; }
+  40%  { opacity: 0.10; }
+  100% { opacity: 1; padding-top: 0; }
+}
+
+#logo, #site-title, #site-description {
+  opacity: 0;
+}
+
+#logo.fadein {
+  opacity: 0;
+  animation-name: fadein;
+  animation-delay: 0.1s;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+#site-title.fadein {
+  opacity: 0;
+  animation-name: fadein;
+  animation-delay: 0.8s;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+#site-description.fadein {
+  opacity: 0;
+  animation-name: fadein;
+  animation-delay: 1.5s;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+#diamond.fadein {
+  transition: opacity 1s ease-in-out;
+  opacity: 1;
+}
+
+#diamond-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 6vh;
+  transform: translateZ(-0.5px) scale(1.5);
+  position: absolute;
+  top: 95vh;
+  z-index: 1000;
+}
+
+@keyframes diamondfloat {
+  0% {margin-bottom: 15px}
+  25% {margin-bottom: 0}
+  50% {margin-top: 15px}
+  100% {margin-bottom: 0}
+}
+
+#diamond {
+  opacity: 0;
+  animation: diamondfloat 2s infinite;
+  cursor: pointer;
+  margin-right: 40px;
+}
+
+.home-block {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+header {
+  height: 100vh;
+  transform: translateZ(-1.1px) translateY(-45px) scale(2.1);
+
+}
+
+#home-block-2 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  height: 300vh;
+  transform: translateZ(-0.5px) scale(1.5);
+  margin-top: 100vh;
+}
+
+#image-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 50%;
+}
+
+#image-wrapper div {
+  width: 100%;
+  height: 33.333%;
+  background-size: cover;
+  background-position: center center;
+}
+
+#description-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 450vh;
+  justify-content: flex-start;
+  pointer-events: none;
+  transform: translateZ(0);
+  margin-top: -370vh;
+}
+
+#description-wrapper h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#description-wrapper div {
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#description-wrapper p {
+  font-size: 2em;
+  line-height: 1.5em;
+  margin: 0;
+  text-align: right;
+  pointer-events: auto;
+}
+
+#description-wrapper div {
+  height: 33.333%;
+}
+
+#home {
+  perspective: 1px;
+  overflow-x: hidden;
+  height: 100vh;
+  overflow-y: auto;
+  margin-top: -52px;
+}
+
+footer {
+  transform: translateZ(-0.5px) scale(1.5);
+}
