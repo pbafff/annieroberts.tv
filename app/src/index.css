@@ -126,22 +126,20 @@ header {
   margin-top: 6vh;
   transform: translateZ(-0.5px) scale(1.5);
   position: absolute;
-  top: 95vh;
+  top: 105vh;
   z-index: 1000;
 }
 
 @keyframes diamondfloat {
-  0% {margin-bottom: 15px}
-  25% {margin-bottom: 0}
-  50% {margin-top: 15px}
-  100% {margin-bottom: 0}
+  25% {margin-top: 15px}
+  100% {margin-top: 0}
 }
 
 #diamond {
   opacity: 0;
   animation: diamondfloat 2s infinite;
   cursor: pointer;
-  margin-right: 40px;
+  width: 35px;
 }
 
 .home-block {
@@ -224,4 +222,26 @@ header {
 
 footer {
   transform: translateZ(-0.5px) scale(1.5);
+  margin-top: 205px;
+}
+
+.st0 {
+  fill: #000000;
+}
+
+.st1 {
+  fill: #9146FF;
+}
+
+.cls-1{fill:none;}
+
+.cls-2{fill:#1da1f2;}
+
+.socials {
+  height: fit-content;
+  opacity: 0.5;
+}
+
+.socials:hover {
+  opacity: 1;
 }
