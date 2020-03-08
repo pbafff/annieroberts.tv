@@ -215,7 +215,7 @@ header {
 #home {
   perspective: 1px;
   overflow-x: hidden;
-  height: 100vh;
+  height: 99.9vh;
   overflow-y: auto;
   margin-top: -52px;
 }
