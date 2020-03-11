@@ -11,6 +11,10 @@ body {
   color: white;
 }
 
+#home {
+  margin-top: -52px;
+}
+
 nav {
   top: 0;
   width: 100%;
@@ -49,12 +53,19 @@ nav a {
 header {
   text-align: center;
   height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+section {
+  height: 300vh;
 }
 
 #banner {
   background-size: cover;
   background-position: center center;
-  transform: translateZ(-1px) scale(1.1);
+  height: 69vh;
 }
 
 @keyframes fadeout {
@@ -123,16 +134,11 @@ header {
   display: flex;
   width: 100%;
   justify-content: center;
-  margin-top: 6vh;
-  transform: translateZ(-0.5px) scale(1.5);
-  position: absolute;
-  top: 105vh;
-  z-index: 1000;
 }
 
 @keyframes diamondfloat {
-  25% {margin-top: 15px}
-  100% {margin-top: 0}
+  25% {transform: translateY(15px)}
+  100% {transform: translateY(0)}
 }
 
 #diamond {
@@ -151,8 +157,6 @@ header {
 
 header {
   height: 100vh;
-  transform: translateZ(-1.1px) translateY(-45px) scale(2.1);
-
 }
 
 #home-block-2 {
@@ -160,8 +164,6 @@ header {
   justify-content: space-between;
   flex-direction: row;
   height: 300vh;
-  transform: translateZ(-0.5px) scale(1.5);
-  margin-top: 100vh;
 }
 
 #image-wrapper {
@@ -173,7 +175,7 @@ header {
 
 #image-wrapper div {
   width: 100%;
-  height: 33.333%;
+  height: 100vh ;
   background-size: cover;
   background-position: center center;
 }
@@ -181,11 +183,11 @@ header {
 #description-wrapper {
   display: flex;
   flex-direction: column;
-  height: 450vh;
   justify-content: flex-start;
   pointer-events: none;
-  transform: translateZ(0);
-  margin-top: -370vh;
+  position: relative;
+  bottom: 300vh;
+  margin-bottom: -300vh;
 }
 
 #description-wrapper h2 {
@@ -195,6 +197,7 @@ header {
 
 #description-wrapper div {
   width: 25vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -206,23 +209,6 @@ header {
   margin: 0;
   text-align: right;
   pointer-events: auto;
-}
-
-#description-wrapper div {
-  height: 33.333%;
-}
-
-#home {
-  perspective: 1px;
-  overflow-x: hidden;
-  height: 99.9vh;
-  overflow-y: auto;
-  margin-top: -52px;
-}
-
-footer {
-  transform: translateZ(-0.5px) scale(1.5);
-  margin-top: 205px;
 }
 
 .st0 {
