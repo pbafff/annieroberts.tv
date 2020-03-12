@@ -1,26 +1,51 @@
 import React, {Component} from 'react';
 
 class Home extends Component {
+    constructor(props) {
+        super(props);
+        this.state = { isLoading: true }
+    }
+
     fadeout() {
         const eyeInDark = document.getElementById('eye-in-dark');
+        const eyeHalfOpen = document.getElementById('eye-half-open-2');
         const logo = document.getElementById('logo');
         const title = document.getElementById('site-title');
         const description = document.getElementById('site-description');
         const diamond = document.getElementById('diamond');
+        const socials = document.getElementsByClassName('socials');
         setTimeout(() => {
-            eyeInDark.classList.add('fadeout')
+            eyeHalfOpen.style.visibility = 'hidden';
         }, 750);
+        setTimeout(() => {
+            eyeInDark.classList.add('fadeout');
+        }, 1250);
         setTimeout(() => {
             logo.classList.add('fadein');
             title.classList.add('fadein');
             description.classList.add('fadein');
-        }, 1250);
+        }, 1750);
         setTimeout(() => {
-            diamond.classList.add('fadein')
-        }, 3750);
+            Array.prototype.forEach.call(socials, (x) => {
+                x.classList.add('fadein');
+            });
+            diamond.classList.add('fadein');
+        }, 4250);
         setTimeout(() => {
             eyeInDark.style.visibility = 'hidden';
-        }, 2500);
+        }, 3000);
+    }
+
+    intro_fade() {
+        const eyeClosed = document.getElementById('eye-closed');
+        //const eyeHalfOpen = document.getElementById('eye-half-open');
+        setTimeout(() => {
+            //eyeClosed.classList.add('fadeout');
+            eyeClosed.style.visibility = 'hidden';
+        }, 750);
+        // setTimeout(() => {
+        //     eyeHalfOpen.classList.add('fadeout')
+        // }, 2250);
     }
 
     scroll_down() {
@@ -28,15 +53,23 @@ class Home extends Component {
     }
 
     componentDidMount() {
-        this.fadeout();
+        document.getElementsByTagName('body')[0].style.height = '101vh';
+        this.intro_fade();
+        setTimeout(() => {
+            this.setState({isLoading: false});
+            this.fadeout();
+            document.getElementsByTagName('body')[0].style.height = 'inherit';
+            }, 750);
     }
 
-    render() {
+    homepage() {
         return (
             <div id="home">
                 <header>
                     <div id="banner" style={{backgroundImage: "url('banner.png')"}}>
-                        <div id="eye-in-dark" style={{backgroundImage: "url('eye-in-dark.png')"}}/>
+                        <div id="eye-in-dark" style={{backgroundImage: "url('eye-in-dark.png')"}}>
+                            <div id={"eye-half-open-2"} style={{backgroundImage: 'url("eye-half-open.png")', backgroundPosition: 'center center', height: '69vh', backgroundSize: 'cover'}}/>
+                        </div>
                         <div style={{display: 'flex', justifyContent: 'center'}}>
                             <div id="site-branding"
                                  style={{marginRight: "35px", transform: 'translate(0)', position: 'absolute', top: '100px'}}>
@@ -162,6 +195,20 @@ class Home extends Component {
                     }}/>
                 </footer>
             </div>
+        )
+    }
+
+    intro() {
+        return (
+            <div id={"eye-half-open"} style={{backgroundImage: 'url("eye-half-open.png")', backgroundPosition: 'center center', height: '69vh', backgroundSize: 'cover', marginTop: '-52px'}}>
+                <div id={"eye-closed"} style={{backgroundImage: 'url("eye-closed.png")', backgroundPosition: 'center center', height: '69vh', backgroundSize: 'cover'}}/>
+            </div>
+        )
+    }
+
+    render() {
+        return (
+            this.state.isLoading ? this.intro() : this.homepage()
         )
     }
 }

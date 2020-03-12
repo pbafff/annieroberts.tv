@@ -74,7 +74,7 @@ section {
 }
 
 #eye-in-dark {
-  height: 650px;
+  height: 69vh;
   width: 100%;
   background-size: cover;
   background-position: center center;
@@ -83,6 +83,20 @@ section {
 #eye-in-dark.fadeout {
   animation-name: fadeout;
   animation-duration: 1.5s;
+  animation-timing-function: ease-in;
+  opacity: 0;
+}
+
+#eye-closed.fadeout {
+  animation-name: fadeout;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  opacity: 0;
+}
+
+#eye-half-open.fadeout {
+  animation-name: fadeout;
+  animation-duration: 1s;
   animation-timing-function: ease-in;
   opacity: 0;
 }
@@ -225,6 +239,11 @@ header {
 
 .socials {
   height: fit-content;
+  opacity: 0;
+}
+
+.socials.fadein {
+  transition: opacity 0.5s ease-in-out;
   opacity: 0.5;
 }
 
