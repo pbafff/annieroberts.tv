@@ -20,7 +20,7 @@ h1, h2 {
 }
 
 #site-branding {
-  transform: translateX(-10px);
+  transform: translateX(-25px);
   position: absolute;
   top: 100px;
 }
