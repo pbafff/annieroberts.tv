@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: -apple-system, BlinkMacSystemFont, 'Champagne and Limousines', 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -11,8 +11,29 @@ body {
   color: white;
 }
 
+h1, h2 {
+  font-family: 'Azonix';
+}
+
+#logo {
+  transform: translateY(-9vh);
+}
+
+#site-title {
+  margin-top: 13vh;
+  margin-bottom: 0;
+  font-size: 2.0736em;
+  text-align: center;
+}
+
+#site-description {
+  margin-top: 1vh;
+  font-size: 1.5736em;
+  text-align: center;
+}
+
 #home {
-  margin-top: -52px;
+  margin-top: -49px;
 }
 
 nav {
@@ -171,6 +192,13 @@ section {
 
 header {
   height: 100vh;
+}
+
+footer {
+  height: 65vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 #home-block-2 {

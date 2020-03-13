@@ -76,11 +76,10 @@ class Home extends Component {
                                 <div id="logo">
                                     <img src="annie2.png" alt={"logo"}/>
                                 </div>
-                                <h1 id="site-title"
-                                    style={{marginTop: "220px", marginBottom: "0", fontSize: "2.0736rem", textAlign: 'center'}}>
+                                <h1 id="site-title">
                                     Annie Roberts
                                 </h1>
-                                <p id="site-description" style={{marginTop: "2px", fontSize: "1.0736rem", textAlign: 'center'}}>
+                                <p id="site-description">
                                     LGBTQIA+ Influencer
                                 </p>
                             </div>
@@ -191,7 +190,7 @@ class Home extends Component {
                         </div>
                     </div>
                 </section>
-                <footer className={"home-block"}>
+                <footer>
                     <div style={{
                         backgroundImage: 'url("annietextfinal.png")',
                         backgroundRepeat: 'no-repeat',
