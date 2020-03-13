@@ -71,8 +71,7 @@ class Home extends Component {
                             <div id={"eye-half-open-2"} style={{backgroundImage: 'url("eye-half-open.png")', backgroundPosition: 'center center', height: '69vh', backgroundSize: 'cover'}}/>
                         </div>
                         <div style={{display: 'flex', justifyContent: 'center'}}>
-                            <div id="site-branding"
-                                 style={{marginRight: "35px", transform: 'translate(0)', position: 'absolute', top: '100px'}}>
+                            <div id="site-branding">
                                 <div id="logo">
                                     <img src="annie2.png" alt={"logo"}/>
                                 </div>

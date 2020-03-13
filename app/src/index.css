@@ -19,6 +19,12 @@ h1, h2 {
   transform: translateY(-9vh);
 }
 
+#site-branding {
+  transform: translateX(-10px);
+  position: absolute;
+  top: 100px;
+}
+
 #site-title {
   margin-top: 13vh;
   margin-bottom: 0;
