@@ -166,7 +166,7 @@ class Home extends Component {
                                 I’m a full-time streamer on Twitch. My dream is to eventually develop a “show”,
                                 using the talents that I learn through streaming: graphic design, video editing,
                                 entertaining, acting, camera, and audio production.
-                                My live times are available on my Twitch!
+                                My live times are available on <span><a href={"https://twitch.tv/annie"} style={{textDecoration: 'none', color: '#9146FF'}}>my Twitch</a></span>!
                             </p>
                         </div>
                         <div id={"text-2"}>
