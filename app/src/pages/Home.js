@@ -88,11 +88,11 @@ class Home extends Component {
                         backgroundColor: "black",
                         opacity: '1',
                         width: '100%',
-                        height: '150px',
+                        height: '15.4vh',
                         display: 'flex',
                         flexDirection: 'row',
                         justifyContent: 'space-around',
-                        paddingTop: '75px'
+                        paddingTop: '7.68vh'
                     }}
                     >
                         <a className={"socials"} href={"https://youtube.com/annedro"} target="_blank">
