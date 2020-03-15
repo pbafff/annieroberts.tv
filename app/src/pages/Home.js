@@ -190,13 +190,46 @@ class Home extends Component {
                     </div>
                 </section>
                 <footer>
-                    <div style={{
-                        backgroundImage: 'url("annietextfinal.png")',
-                        backgroundRepeat: 'no-repeat',
-                        backgroundSize: '25%',
-                        backgroundPosition: 'center center',
-                        height: '650px'
-                    }}/>
+                    <div id={"catgirl"} style={{backgroundImage: 'url("annietextfinal.png")'}}/>
+                    <div id={"sponsors-and-footer-socials"}>
+                        <h2 style={{textAlign: 'center', marginBottom: '0'}}>
+                            Sponsors
+                        </h2>
+                        <div id={"sponsors-wrapper"}>
+                            <a href={"https://twitch.tv"}>
+                                <img src={"Twitch_UnextrudedWordmarkPurple.png"} style={{width: '175px'}} alt={"Twitch"}/>
+                            </a>
+                            <a href={"https://mayhem.overwatchleague.com"}>
+                                <img src={"1200px-Florida_Mayhem_logo.svg.png"} style={{width: '175px'}} alt={"Florida Mayhem"}/>
+                            </a>
+                            <a href={"https://discordapp.com"}>
+                                <img src={"Discord-Logo+Wordmark-Color.png"} style={{width: '175px'}} alt={"Discord"}/>
+                            </a>
+                            <a href={"https://secretlab.co"}>
+                                <img src={"secretlabslogo-1.png"} style={{width: '175px'}}  alt={"Secret Lab"}/>
+                            </a>
+                        </div>
+                        <p style={{textAlign: 'center', fontSize: '1.3em', marginTop: '55px'}}>
+                            Welcome to My Experience
+                        </p>
+                        <div id={"footer-socials-wrapper"}>
+                            <a className={"footer-socials"} href={"https://youtube.com/annedro"} style={{color: '#800000'}}>
+                                youtube
+                            </a>
+                            <a className={"footer-socials"} href={"https://patreon.com/annieroberts/"} style={{color: '#742d23'}}>
+                                patreon
+                            </a>
+                            <a className={"footer-socials"} href={"https://twitch.tv/annie"} style={{color: '#492380'}}>
+                                twitch
+                            </a>
+                            <a className={"footer-socials"} href={"https://instagram.com/annie_dro"} style={{color: '#400040'}}>
+                                instagram
+                            </a>
+                            <a className={"footer-socials"} href={"https://twitter.com/Annie_Dro"} style={{color: '#0e5179'}}>
+                                twitter
+                            </a>
+                        </div>
+                    </div>
                 </footer>
             </div>
         )

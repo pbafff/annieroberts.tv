@@ -22,7 +22,7 @@ h1, h2 {
 #site-branding {
   transform: translateX(-25px);
   position: absolute;
-  top: 100px;
+  top: 11vh;
 }
 
 #site-title {
@@ -203,8 +203,8 @@ header {
 footer {
   height: 65vh;
   display: flex;
-  justify-content: center;
-  flex-direction: column;
+  justify-content: space-between;
+  flex-direction: row;
 }
 
 #home-block-2 {
@@ -257,6 +257,43 @@ footer {
   margin: 0;
   text-align: right;
   pointer-events: auto;
+}
+
+#catgirl {
+  background-repeat: no-repeat;
+  background-size: 50vh;
+  background-position: center center;
+  height: inherit;
+  width: 40vw;
+}
+
+#sponsors-and-footer-socials {
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+  height: inherit;
+  justify-content: center;
+}
+
+#sponsors-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+#footer-socials-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer-socials {
+  text-decoration: none;
+  font-size: 2.3em;
+  color: inherit;
 }
 
 .st0 {
