@@ -70,18 +70,16 @@ class Home extends Component {
                         <div id="eye-in-dark" style={{backgroundImage: "url('eye-in-dark.png')"}}>
                             <div id={"eye-half-open-2"} style={{backgroundImage: 'url("eye-half-open.png")', backgroundPosition: 'center center', height: '69vh', backgroundSize: 'cover'}}/>
                         </div>
-                        <div style={{display: 'flex', justifyContent: 'center'}}>
-                            <div id="site-branding">
-                                <div id="logo">
-                                    <img src="annie2.png" alt={"logo"}/>
-                                </div>
-                                <h1 id="site-title">
-                                    Annie Roberts
-                                </h1>
-                                <p id="site-description">
-                                    LGBTQIA+ Influencer
-                                </p>
+                        <div id="site-branding">
+                            <div id="logo">
+                                <img src="annie2.png" alt={"logo"}/>
                             </div>
+                            <h1 id="site-title">
+                                Annie Roberts
+                            </h1>
+                            <p id="site-description">
+                                LGBTQIA+ Influencer
+                            </p>
                         </div>
                     </div>
                     <div style={{

@@ -19,10 +19,16 @@ h1, h2 {
   transform: translateY(-9vh);
 }
 
+#logo img {
+  height: 22.6vh;
+  min-height: 136px;
+}
+
 #site-branding {
-  transform: translateX(-25px);
-  position: absolute;
-  top: 11vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  transform: translateX(-25px) translateY(-58vh);
 }
 
 #site-title {
