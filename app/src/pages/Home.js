@@ -68,7 +68,7 @@ class Home extends Component {
                 <header>
                     <div id="banner" style={{backgroundImage: "url('banner.png')"}}>
                         <div id="eye-in-dark" style={{backgroundImage: "url('eye-in-dark.png')"}}>
-                            <div id={"eye-half-open-2"} style={{backgroundImage: 'url("eye-half-open.png")', backgroundPosition: 'center center', height: '69vh', backgroundSize: 'cover'}}/>
+                            <div id={"eye-half-open-2"} style={{backgroundImage: 'url("eye-half-open.png")', backgroundPosition: 'center center', height: '69vh', minHeight: '620px', backgroundSize: 'cover'}}/>
                         </div>
                         <div id="site-branding">
                             <div id="logo">
@@ -149,8 +149,8 @@ class Home extends Component {
                     </div>
                 </header>
                 <main>
-                    <div id={"home-block-2"} className={"home-block"}>
-                        <iframe id={"fluid"} src={'fluid.html'} style={{width: '50%', opacity: '0.9'}} frameBorder={'0'}/>
+                    <div id={"home-block-2"}>
+                        <iframe id={"fluid"} src={'fluid.html'} style={{width: '50%', opacity: '0.9', minHeight: '1980px'}} frameBorder={'0'}/>
                         <div id={"image-wrapper"}>
                             <div style={{backgroundImage: 'url("IMG_20190930_234351.jpg")'}}/>
                             <div style={{backgroundImage: 'url("Snapchat-1510533050.jpg")'}}/>
