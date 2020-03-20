@@ -148,17 +148,9 @@ class Home extends Component {
                              onClick={this.scroll_down}/>
                     </div>
                 </header>
-                <main>
-                    <div id={"home-block-2"}>
-                        <iframe id={"fluid"} src={'fluid.html'} style={{width: '50%', opacity: '0.9', minHeight: '1980px'}} frameBorder={'0'}/>
-                        <div id={"image-wrapper"}>
-                            <div style={{backgroundImage: 'url("IMG_20190930_234351.jpg")'}}/>
-                            <div style={{backgroundImage: 'url("Snapchat-1510533050.jpg")'}}/>
-                            <div style={{backgroundImage: 'url("Snapchat-382335841.jpg")'}}/>
-                        </div>
-                    </div>
-                    <div id={"description-wrapper"}>
-                        <div id={"text-1"}>
+                <main style={{display: 'flex', flexDirection: 'column', position: 'relative'}}>
+                    <section className={"home-main-section"}>
+                        <div className={"home-main-section-text"}>
                             <h2>Streaming</h2>
                             <p>
                                 I’m a full-time streamer on Twitch. My dream is to eventually develop a “show”,
@@ -167,7 +159,10 @@ class Home extends Component {
                                 My live times are available on <span><a href={"https://twitch.tv/annie"} style={{textDecoration: 'none', color: '#9146FF'}}>my Twitch</a></span>!
                             </p>
                         </div>
-                        <div id={"text-2"}>
+                        <div className={"home-main-section-img"} style={{backgroundImage: 'url("IMG_20190930_234351.jpg")'}}/>
+                    </section>
+                    <section className={"home-main-section"}>
+                        <div className={"home-main-section-text"}>
                             <h2>Music</h2>
                             <p>
                                 I play guitar and have been in various bands since middle school. I also play piano,
@@ -176,7 +171,10 @@ class Home extends Component {
                                 well as produce video.
                             </p>
                         </div>
-                        <div id={"text-3"}>
+                        <div className={"home-main-section-img"} style={{backgroundImage: 'url("Snapchat-1510533050.jpg")'}}/>
+                    </section>
+                    <section className={"home-main-section"}>
+                        <div className={"home-main-section-text"}>
                             <h2>Modelling</h2>
                             <p>
                                 Recently I decided to branch into other types of art, photography.
@@ -185,8 +183,10 @@ class Home extends Component {
                                 find a dedicated photographer.
                             </p>
                         </div>
-                    </div>
+                        <div className={"home-main-section-img"} style={{backgroundImage: 'url("Snapchat-382335841.jpg")'}}/>
+                    </section>
                 </main>
+                <iframe id={"fluid"} src={'fluid.html'} frameBorder={'0'}/>
                 <footer>
                     <div id={"catgirl"} style={{backgroundImage: 'url("annietextfinal.png")'}}/>
                     <div id={"sponsors-and-footer-socials"}>
