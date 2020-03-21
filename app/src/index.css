@@ -11,43 +11,6 @@ body {
   color: white;
 }
 
-h1, h2 {
-  font-family: 'Azonix';
-}
-
-#logo {
-  transform: translateY(-9vh);
-}
-
-#logo img {
-  height: 22.6vh;
-  min-height: 136px;
-}
-
-#site-branding {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  transform: translateX(-25px) translateY(-58vh);
-}
-
-#site-title {
-  margin-top: 13vh;
-  margin-bottom: 0;
-  font-size: 2.0736em;
-  text-align: center;
-}
-
-#site-description {
-  margin-top: 1vh;
-  font-size: 1.5736em;
-  text-align: center;
-}
-
-#home {
-  margin-top: -49px;
-}
-
 nav {
   top: 0;
   width: 100%;
@@ -83,6 +46,14 @@ nav a {
   color: inherit;
 }
 
+h1, h2 {
+  font-family: 'Azonix';
+}
+
+#home {
+  margin-top: -49px;
+}
+
 header {
   text-align: center;
   height: 100vh;
@@ -97,6 +68,54 @@ header {
   background-position: center center;
   height: 69vh;
   min-height: 428px;
+  position: relative;
+}
+
+#site-branding {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  height: 80vh;
+  width: 100%;
+  /*padding-right: 50px;*/
+  box-sizing: border-box;
+  min-height: 496px;
+}
+
+#logo {
+  transform: translateY(9vh);
+}
+
+#logo img {
+  height: 11vh;
+  min-height: 68px;
+}
+
+#site-title {
+  margin-bottom: 0;
+  font-size: 2.0736em;
+  text-align: center;
+}
+
+#site-description {
+  margin-top: 0.5vh;
+  margin-bottom: 0;
+  font-size: 1.5736em;
+  text-align: center;
+}
+
+#header-socials-wrapper {
+  background-color: black;
+  width: 100%;
+  height: 11vh;
+  min-height: 68px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 12.68vh;
+  align-items: center;
 }
 
 @keyframes fadeout {
@@ -252,6 +271,8 @@ footer {
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
+  padding: 3vh;
+  box-sizing: border-box;
 }
 
 #catgirl {
@@ -297,9 +318,12 @@ footer {
   }
 }
 
-@media only screen and (max-width: 636px){
+@media only screen and (max-width: 686px){
   #logo img {
-    height: 18vh;
+    height: 80px;
+  }
+  #site-title {
+    margin-top: 17.5vh;
   }
 }
 
@@ -307,6 +331,12 @@ footer {
   #fluid {
     margin-top: -1860px;
     margin-bottom: -1858px;
+  }
+  #site-title {
+    margin-top: 93px;
+  }
+  #header-socials-wrapper {
+    padding-top: 79px;
   }
 }
 

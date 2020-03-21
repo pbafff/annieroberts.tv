@@ -74,24 +74,17 @@ class Home extends Component {
                             <div id="logo">
                                 <img src="annie2.png" alt={"logo"}/>
                             </div>
-                            <h1 id="site-title">
-                                Annie Roberts
-                            </h1>
-                            <p id="site-description">
-                                LGBTQIA+ Influencer
-                            </p>
+                            <div>
+                                <h1 id="site-title">
+                                    Annie Roberts
+                                </h1>
+                                <p id="site-description">
+                                    LGBTQIA+ Influencer
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    <div style={{
-                        backgroundColor: "black",
-                        opacity: '1',
-                        width: '100%',
-                        height: '15.4vh',
-                        display: 'flex',
-                        flexDirection: 'row',
-                        justifyContent: 'space-around',
-                        paddingTop: '7.68vh'
-                    }}
+                    <div id={"header-socials-wrapper"}
                     >
                         <a className={"socials"} href={"https://youtube.com/annedro"} target="_blank">
                             <svg height="50px" viewBox="0 -77 512.00213 512" width="50px" xmlns="http://www.w3.org/2000/svg">
