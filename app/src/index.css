@@ -384,6 +384,9 @@ footer {
   #site-title {
     margin-top: 93px;
   }
+}
+
+@media only screen and (max-height: 620px) {
   #header-socials-wrapper {
     padding-top: 79px;
   }
