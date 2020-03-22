@@ -49,7 +49,7 @@ class Home extends Component {
     }
 
     scroll_down() {
-        document.getElementById('text-1').scrollIntoView({behavior: "smooth", block: "center"});
+        document.getElementsByTagName('main')[0].scrollIntoView({behavior: "smooth"});
     }
 
     componentDidMount() {
@@ -68,7 +68,7 @@ class Home extends Component {
                 <header>
                     <div id="banner" style={{backgroundImage: "url('banner.png')"}}>
                         <div id="eye-in-dark" style={{backgroundImage: "url('eye-in-dark.png')"}}>
-                            <div id={"eye-half-open-2"} style={{backgroundImage: 'url("eye-half-open.png")', backgroundPosition: 'center center', height: '69vh', minHeight: '620px', backgroundSize: 'cover'}}/>
+                            <div id={"eye-half-open-2"} style={{backgroundImage: 'url("eye-half-open.png")', backgroundPosition: 'center center', height: '69vh', minHeight: '428px', backgroundSize: 'cover'}}/>
                         </div>
                         <div id="site-branding">
                             <div id="logo">
@@ -228,7 +228,7 @@ class Home extends Component {
 
     intro() {
         return (
-            <div id={"eye-half-open"} style={{backgroundImage: 'url("eye-half-open.png")', backgroundPosition: 'center center', height: '69vh', backgroundSize: 'cover', marginTop: '-52px'}}>
+            <div id={"eye-half-open"} style={{backgroundImage: 'url("eye-half-open.png")', backgroundPosition: 'center center', height: '69vh', minHeight: '428px', backgroundSize: 'cover', marginTop: '-52px'}}>
                 <div id={"eye-closed"} style={{backgroundImage: 'url("eye-closed.png")', backgroundPosition: 'center center', height: '69vh', backgroundSize: 'cover'}}/>
             </div>
         )
