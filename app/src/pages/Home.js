@@ -228,7 +228,7 @@ class Home extends Component {
 
     intro() {
         return (
-            <div id={"eye-half-open"} style={{backgroundImage: 'url("eye-half-open.png")', backgroundPosition: 'center center', height: '69vh', minHeight: '428px', backgroundSize: 'cover', marginTop: '-52px'}}>
+            <div id={"eye-half-open"} style={{backgroundImage: 'url("eye-half-open.png")', backgroundPosition: 'center center', height: '69vh', minHeight: '428px', backgroundSize: 'cover', marginTop: '-49px'}}>
                 <div id={"eye-closed"} style={{backgroundImage: 'url("eye-closed.png")', backgroundPosition: 'center center', height: '69vh', backgroundSize: 'cover'}}/>
             </div>
         )
