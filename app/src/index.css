@@ -325,9 +325,58 @@ footer {
   #site-title {
     margin-top: 17.5vh;
   }
+  main {
+    justify-content: flex-start;
+  }
+  .home-main-section {
+    flex-direction: column;
+    height: 1200px;
+  }
+  .home-main-section-text {
+    width: 100vw;
+    min-height: 620px;
+  }
+  .home-main-section-text p {
+    font-size: 1.4em;
+  }
+  .home-main-section-img {
+    width: 100vw;
+    z-index: 20;
+  }
+  #fluid {
+    width: 100vw;
+    height: 3600px;
+    margin-top: -3602px;
+    margin-bottom: -3602px;
+  }
+  footer {
+    flex-direction: column;
+    transform: translateY(40px);
+    height: 100vh;
+    padding: 0;
+  }
+  #catgirl {
+    background-size: 90vw;
+    width: 100vw;
+  }
+  #sponsors-and-footer-socials {
+    height: 33vh;
+    width: 100vw;
+    justify-content: flex-start;
+  }
+  #footer-socials-wrapper {
+    padding: 0 20px 0 20px;
+    box-sizing: border-box;
+  }
 }
 
-@media only screen and (max-height: 620px) {
+@media only screen and (max-width: 686px) and (orientation: landscape) {
+  #catgirl {
+    background-size: 40vw;
+  }
+}
+
+@media only screen and (max-height: 620px) and (min-width: 686px) {
   #fluid {
     margin-top: -1860px;
     margin-bottom: -1858px;

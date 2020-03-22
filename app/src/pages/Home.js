@@ -200,7 +200,7 @@ class Home extends Component {
                                 <img src={"secretlabslogo-1.png"} style={{width: '175px'}}  alt={"Secret Lab"}/>
                             </a>
                         </div>
-                        <p style={{textAlign: 'center', fontSize: '1.3em', marginTop: '55px'}}>
+                        <p style={{textAlign: 'center', fontSize: '1.3em', marginTop: '55px', marginBottom: '0'}}>
                             Welcome to My Experience
                         </p>
                         <div id={"footer-socials-wrapper"}>
