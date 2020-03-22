@@ -153,10 +153,9 @@ header {
 }
 
 @keyframes fadein {
-  0%   { opacity: 0; padding-top: 40px; }
   25%  { opacity: 0; }
   40%  { opacity: 0.10; }
-  100% { opacity: 1; padding-top: 0; }
+  100% { opacity: 1; }
 }
 
 #logo, #site-title, #site-description {
