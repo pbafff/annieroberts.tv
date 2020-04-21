@@ -5,8 +5,10 @@ import {
     Route,
     Link
 } from "react-router-dom";
-import './App.css';
 import Home from './pages/Home';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import WhatsNew from './pages/WhatsNew';
 
 export default function App() {
     return (
@@ -17,7 +19,7 @@ export default function App() {
                         <Link to="/">Home</Link>
                     </li>
                     <li>
-                        <Link to="/portfolio">Portfolio</Link>
+                        <Link to="/whatsnew">What's New</Link>
                     </li>
                     <li>
                         <Link to="/about">About</Link>
@@ -29,8 +31,8 @@ export default function App() {
             </nav>
 
             <Switch>
-                <Route path="/portfolio">
-                    <Portfolio/>
+                <Route path="/whatsnew">
+                    <WhatsNew/>
                 </Route>
                 <Route path="/about">
                     <About/>
@@ -44,16 +46,4 @@ export default function App() {
             </Switch>
         </Router>
     );
-}
-
-function Portfolio() {
-    return <h1>Portfolio</h1>
-}
-
-function About() {
-    return <h1>About</h1>
-}
-
-function Contact() {
-    return <h1>Contact</h1>
 }
