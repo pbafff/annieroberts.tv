@@ -253,7 +253,7 @@ header {
 }
 
 #fluid {
-  width: 50%;
+  width: 50vw;
   opacity: 0.9;
   height: 300vh;
   min-height: 1860px;
@@ -305,6 +305,10 @@ footer {
   flex-wrap: wrap;
 }
 
+.narrow-parallax {
+  display: none;
+}
+
 .footer-socials {
   text-decoration: none;
   font-size: 2.3em;
@@ -326,6 +330,12 @@ footer {
   }
   main {
     justify-content: flex-start;
+  }
+  .narrow-parallax {
+    display: block;
+  }
+  .default-parallax {
+    display: none;
   }
   .home-main-section {
     flex-direction: column;
