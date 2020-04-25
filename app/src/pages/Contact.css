@@ -26,15 +26,34 @@
     height: 730px;
 }
 
-@media only screen and (min-width: 768px) {
-    #Contact .container {
+#Contact .mid-size-container {
+    display: none;
+}
+
+@media only screen and (min-width: 950px) {
+    #Contact .default-container {
         width: 100%;
         display: flex;
         justify-content: center;
     }
 }
 
+@media only screen and (max-width: 950px) {
+    #Contact .default-container {
+        display: none;
+    }
+    #Contact .mid-size-container {
+        display: block;
+    }
+}
+
 @media only screen and (max-width: 768px) {
+    #Contact .default-container {
+        display: block;
+    }
+    #Contact .mid-size-container {
+        display: none;
+    }
     #Contact {
         flex-direction: column;
         align-items: center;
@@ -44,7 +63,7 @@
     }
     #Contact .text {
         margin: 0 0 15px 0;
-        width: 300px;
+        width: 90vw;
     }
     #Contact .image {
         height: 400px;
