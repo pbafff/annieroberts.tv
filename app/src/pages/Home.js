@@ -168,7 +168,7 @@ class Home extends Component {
                                     </p>
                                 </div>
                             </Parallax>
-                            <div className={"home-main-section-img"} style={{backgroundImage: 'url("IMG_20190930_234351.jpg")'}}/>
+                            <div className={"home-main-section-img"} style={{backgroundImage: 'url("image0.jpg")'}}/>
                         </section>
                         <section className={"home-main-section"}>
                             <Parallax className={'default-parallax'} y={[200, 0]} styleOuter={{pointerEvents: 'none', zIndex: '11'}}>
